@@ -1,0 +1,13 @@
+input_channel: 3
+
+depth_multiple: 1.0
+width_multiple: 1.0
+
+backbone:
+    # [repeat, module, args]
+    [
+      ## image_size, num_classes, dropout_rate, drop_connect_rate, model_name
+        [1, EfficientNet, [224,6,0.3,0.3,efficientnet-b0]]
+    ]
+
+    

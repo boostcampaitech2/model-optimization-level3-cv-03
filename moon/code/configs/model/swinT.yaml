@@ -1,0 +1,15 @@
+input_channel: 3
+
+depth_multiple: 1.0
+width_multiple: 1.0
+
+backbone:
+    # [repeat, module, args]
+    [
+      # num_classes(output_dim), embed_dim, depths, num_heads, window_size, pretrained
+      # https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_tiny_patch4_window7_224.pth
+        [1, SwinTransformer, [1000,96,[2,2,6,2],[3,6,12,24],7,https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_tiny_patch4_window7_224.pth]],
+        [1, Linear, [6]],
+    ]
+
+    
