@@ -1,4 +1,4 @@
-# boostcamp_pstage10
+# moon
 
 # Environment
 ## 1. Docker
@@ -35,6 +35,9 @@ pip install -r requirements.txt
                      --model_name noisy_student_training 
                      --noisy_train
 
+- **NOTES**(To be modified)
+    - If you want your model to be set up as set at swin transformer github, model name must have prefix "swin_"
+    - Optimizer setting is hard-coded in train.py
 
 ## 4. inference(submission.csv)
 python inference.py --model_config configs/model/mobilenetv3.yaml --weight exp/2021-05-13_16-41-57/best.pt --img_root /opt/ml/data/test --data_config configs/data/taco.yaml3
