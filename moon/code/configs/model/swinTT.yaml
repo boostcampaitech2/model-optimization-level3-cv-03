@@ -6,8 +6,8 @@ width_multiple: 1.0
 backbone:
     # [repeat, module, args]
     [
-      # num_classes(output_dim), embed_dim, depths, num_heads, window_size
-        [1, SwinTransformer, [6,96,[2,2,2,2],[3,6,6,12],7,""]],
+      # num_classes(output_dim), embed_dim, depths, num_heads, window_size, drop, drop_path_rate ,pretrained
+        [1, SwinTransformer, [6,96,[2,2,2,2],[3,6,6,12],7,0.3,0.3,""]],
         # [1, Linear, [6]],
     ]
 
